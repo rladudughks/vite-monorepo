@@ -1,0 +1,46 @@
+{
+  "name": "@monorepo/app-a",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "local": "vite --mode debug",
+    "dev": "vite --mode development",
+    "staging": "vite --mode staging",
+    "prod": "vite --mode production",
+    "build:dev": "vite build --mode development",
+    "build:prod": "vite build --mode production",
+    "build:staging": "vite build --mode staging",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
+    "@tanstack/query-sync-storage-persister": "^5.40.0",
+    "@tanstack/react-query": "^5.40.0",
+    "@tanstack/react-query-devtools": "^5.40.0",
+    "@tanstack/react-query-persist-client": "^5.40.1",
+    "axios": "^1.6.0",
+    "lodash-es": "^4.17.21",
+    "msw": "^2.1.5",
+    "react": "^18.2.0",
+    "react-cookie": "^7.1.4",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.46.1",
+    "react-router-dom": "^6.25.1",
+    "yup": "^1.2.0",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4",
+    "@types/uuid": "^10",
+    "rollup-plugin-visualizer": "^5.12.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  },
+  "homepage": "."
+}

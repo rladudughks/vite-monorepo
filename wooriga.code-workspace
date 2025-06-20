@@ -1,0 +1,34 @@
+{
+  "folders": [
+    {
+      "name": "✨ monorepo",
+      "path": ".",
+    },
+    {
+      "name": "🚀 @monorepo/app-a",
+      "path": "apps/app-a",
+    },
+  ],
+  "settings": {
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    "vite.https": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "search.exclude": {
+      "**/.yarn": true,
+      "**/dist": true,
+      "**/node_modules": true,
+      "tsconfig.tsbuildinfo": true,
+    },
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+  },
+  "extensions": {
+    "recommendations": [
+      "styled-components.vscode-styled-components",
+      "antfu.vite",
+      "arcanis.vscode-zipfs",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "folke.vscode-monorepo-workspace",
+    ],
+  },
+}

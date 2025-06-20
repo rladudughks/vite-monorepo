@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+
+    "baseUrl": "src"
+  },
+
+  "include": ["assets", "src", "index.ts", "../../types", "src/types"]
+}
