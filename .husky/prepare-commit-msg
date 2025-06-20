@@ -40,18 +40,19 @@ if ! [[ "$commit_message" =~ $commit_type ]]; then
   elif [[ "$commit_message" =~ $commit_type ]]; then
     type="${BASH_REMATCH[1]}"
     case $type in
-        "Feat") emoji="✨" ;;
-        "Fix") emoji="🚑" ;;
-        "Docs") emoji="📚" ;;
-        "Style") emoji="🎨" ;;
-        "Refactor") emoji="🔨" ;;
-        "Test") emoji="☔️" ;;
-        "Chore") emoji="🚀" ;;
-        "Design") emoji="💄" ;;
-        "Add") emoji="📝" ;;
-        "Rename") emoji="🚜" ;;
-        "Remove") emoji="🔥" ;;
-        "Clean") emoji="🗑️" ;;
+        "feat") emoji="✨" ;;
+        "fix") emoji="🚑" ;;
+        "docs") emoji="📚" ;;
+        "style") emoji="🎨" ;;
+        "refactor") emoji="🔨" ;;
+        "test") emoji="☔️" ;;
+        "chore") emoji="🚀" ;;
+        "design") emoji="💄" ;;
+        "add") emoji="📝" ;;
+        "rename") emoji="🚜" ;;
+        "move") emoji="🚚" ;;
+        "remove") emoji="🔥" ;;
+        "clean") emoji="🗑️" ;;
     esac
     
     new_commit_message="$emoji ${commit_message}"
