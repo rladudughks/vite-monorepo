@@ -116,6 +116,24 @@ module.exports = {
       },
     },
     {
+      files: [
+        'packages/design-system/**/*.ts?(x)',
+        'packages/design-system/**/*.js?(x)',
+      ],
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+      },
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(
+              `${__dirname}/packages/design-system/tsconfig.json`,
+            ),
+          },
+        },
+      },
+    },
+    {
       files: ['apps/app-a/**/*.ts?(x)', 'apps/app-a/**/*.js?(x)'],
       settings: {
         'import/resolver': {

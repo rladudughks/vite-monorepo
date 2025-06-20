@@ -8,6 +8,10 @@
       "name": "🚀 @monorepo/app-a",
       "path": "apps/app-a",
     },
+    {
+      "name": "📦 @monorepo/design-system",
+      "path": "packages/design-system",
+    },
   ],
   "settings": {
     "typescript.tsserver.maxTsServerMemory": 4096,

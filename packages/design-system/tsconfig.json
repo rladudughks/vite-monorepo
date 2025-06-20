@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+
+    "baseUrl": "src",
+    "paths": {
+      "design-system/*": ["*"]
+    },
+    "declaration": true
+  },
+  "include": [
+    "assets",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../types"
+  ],
+  "exclude": ["dist/*", "esbuild*", "**/**/*.stories"]
+}
