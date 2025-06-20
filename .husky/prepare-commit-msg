@@ -31,7 +31,7 @@ if ! [[ "$commit_message" =~ $commit_type ]]; then
   echo ""
   echo "================================= E X A M P L E ================================="
   echo ""
-  echo "$ git commit -m \"Feat: 기능 A 추가\""
+  echo "$ git commit -m \"feat: 기능 A 추가\""
   echo ""
   echo "================================================================================="
   echo ""
